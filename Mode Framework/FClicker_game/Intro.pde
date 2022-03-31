@@ -1,4 +1,7 @@
 void intro() {
+  
+  theme.play();
+  
   background(255);
   //Clicker Game Title
   strokeWeight(1);
