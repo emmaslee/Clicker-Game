@@ -1,9 +1,19 @@
 void game() {
+  theme.play();
   background(0,255,0);
   
   fill(0);
+  textSize(40);
   text("Score: " + score, width/2, 50);
   text("Lives: " + lives, width/2, 100);
+  
+  //pause button
+  stroke(0);
+  fill(255);
+  rect(25, 25, 150, 80);
+  fill(0);
+  textSize(50);
+  text( "||" , 100, 60);
   
   //display target
   fill(255);
@@ -27,8 +37,10 @@ void gameClicks() {
   //mode = GAMEOVER;
   if ( dist(mouseX, mouseY, x, y) < 50) {
     score = score + 1;
-    coin.rewind();
-    coin.play();
+    coin.rewind();   
+    coin.play();  
+  } else if (mouseX > 25 && mouseX < 175 && mouseY > 25 && mouseY < 105) {
+    mode = PAUSE;
   } else {
     lives = lives - 1;
     bump.rewind();
