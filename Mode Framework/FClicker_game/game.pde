@@ -1,6 +1,6 @@
 void game() {
   theme.play();
-  background(0,255,0);
+  background(140,219,240);
   
   fill(0);
   textSize(40);
