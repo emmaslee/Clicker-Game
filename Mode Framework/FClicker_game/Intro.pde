@@ -8,7 +8,6 @@ void intro() {
   fill(0);
   textSize(72);
   text("CLICKER GAME", 400, 400);
-  
  
   
 
@@ -44,9 +43,8 @@ void introClicks() {
   if (mouseX > 300 && mouseX < 500 && mouseY > 500 && mouseY < 600) {
     mode = GAME;
   }
-}
-void optionsClicks() {
   if (mouseX > 300 && mouseX < 500 && mouseY > 650 && mouseY < 750) {
     mode = OPTIONS;
   }
+
 }

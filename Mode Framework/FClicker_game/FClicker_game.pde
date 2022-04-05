@@ -19,6 +19,12 @@ final int PAUSE = 2;
 final int GAMEOVER = 3;
 final int OPTIONS = 4;
 
+//variables for target options
+PImage smileyfrog;
+PImage angryfrog;
+PImage mouthfrog;
+PImage selectedfrog;
+
 //TARGET VARIABLES------------------------------------------
 float x, y, d;
 float vx, vy; //target velocity
@@ -52,7 +58,10 @@ void setup() {
  bump = minim.loadFile("bump.wav");
  gameover = minim.loadFile("gameover.wav");
  
- 
+ //target options
+ smileyfrog = loadImage("smileyfrog.png");
+ angryfrog = loadImage("angryfrog.png");
+ mouthfrog = loadImage("mouthfrog.png");
 }
 
 void draw() {
