@@ -17,8 +17,12 @@ void game() {
   
   //display target
   fill(255);
+  stroke(255);
   strokeWeight(5);
   ellipse(x, y, 100, 100);
+  imageMode(CENTER);
+  image(selectedImage, x,y , 100, 100);
+  imageMode(CORNER);
   
   //moving
   x = x + vx;

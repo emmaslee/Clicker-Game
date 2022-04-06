@@ -34,13 +34,15 @@ int score, lives;
 Minim minim;
 AudioPlayer theme, coin, bump, gameover;
 
-//COLOR PALLETTE
+//variables for colour selection
+PImage selectedImage;
 
 
 void setup() {
   size(800, 800);
   textAlign(CENTER, CENTER);
   mode = INTRO;
+  selectedImage = smileyfrog;
   
  //target initialization
  x = width/2;
@@ -62,8 +64,10 @@ void setup() {
  smileyfrog = loadImage("smileyfrog.png");
  angryfrog = loadImage("angryfrog.png");
  mouthfrog = loadImage("mouthfrog.png");
-}
+ selectedImage = smileyfrog;
 
+}
+//end of setup
 void draw() {
   if (mode == INTRO) {
     intro();
