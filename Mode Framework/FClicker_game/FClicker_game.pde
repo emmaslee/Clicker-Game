@@ -29,6 +29,8 @@ PImage selectedfrog;
 float x, y, d;
 float vx, vy; //target velocity
 int score, lives;
+float sliderY;
+float thickness;
 
 //sound variables
 Minim minim;
@@ -43,6 +45,9 @@ void setup() {
   textAlign(CENTER, CENTER);
   mode = INTRO;
   selectedImage = smileyfrog;
+  
+  sliderY = 600;
+  thickness = 150;
   
  //target initialization
  x = width/2;
