@@ -9,8 +9,10 @@ void intro() {
   textSize(72);
   text("CLICKER GAME", 400, 400);
  
+  image(lilypad , 650, 600, 180, 180);
+  image(lilypad , 150, 600, 180, 180);
+  image(sitfrog , 400, 200, 180, 180);
   
-
   
   //Start Button
   //tactile - Start button

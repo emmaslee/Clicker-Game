@@ -12,13 +12,13 @@ void options() {
   //smileyfrog button
   //tactile - smileyfrog button
 
-  if (mouseX > 50 && mouseX < 250 && mouseY > 200 && mouseY < 400) {
+  if (mouseX > 100 && mouseX < 280 && mouseY > 210 && mouseY < 400) {
     fill(255, 255, 0);
   } else {
     fill(255);
   }
   rect(50, 200, 200, 200);
-  image(smileyfrog, 60, 210, 180, 180);
+  image(smileyfrog, 150, 300, 180, 180);
 
   //angryfrog button
   //tactile - angryfrog button
@@ -29,7 +29,7 @@ void options() {
     fill(255);
   }
   rect(300, 200, 200, 200);
-  image(angryfrog, 310, 210, 180, 180);
+  image(angryfrog, 400, 300, 180, 180);
 
   //mouthfrog button
   //tactile - mouthfrog button
@@ -40,7 +40,7 @@ void options() {
     fill(255);
   }
   rect(550, 200, 200, 200);
-  image(mouthfrog, 560, 210, 180, 180);
+  image(mouthfrog, 650, 300, 180, 180);
 
   //OK - return to intro button
   //OK tactile
@@ -57,7 +57,7 @@ void options() {
   //indicator
 
   rect(250, 450, 250, 250);
-  image(selectedImage, 325, 575, thickness*10, thickness*10);
+  image(selectedImage, 375, 575, thickness, thickness);
 
 
 

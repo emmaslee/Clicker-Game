@@ -24,6 +24,9 @@ PImage smileyfrog;
 PImage angryfrog;
 PImage mouthfrog;
 PImage selectedfrog;
+PImage sitfrog;
+PImage lilypad;
+
 
 //TARGET VARIABLES------------------------------------------
 float x, y, d;
@@ -43,6 +46,7 @@ PImage selectedImage;
 void setup() {
   size(800, 800);
   textAlign(CENTER, CENTER);
+  imageMode(CENTER);
   mode = INTRO;
   selectedImage = smileyfrog;
   
@@ -69,6 +73,9 @@ void setup() {
  smileyfrog = loadImage("smileyfrog.png");
  angryfrog = loadImage("angryfrog.png");
  mouthfrog = loadImage("mouthfrog.png");
+ sitfrog = loadImage("sitfrog.png");
+ lilypad = loadImage("lilypad.png");
+ 
  selectedImage = smileyfrog;
 
 }

@@ -21,7 +21,7 @@ void game() {
   strokeWeight(5);
   ellipse(x, y, 100, 100);
   imageMode(CENTER);
-  image(selectedImage, x,y , 100, 100);
+  image(selectedImage, x,y , thickness, thickness);
   imageMode(CORNER);
   
   //moving
